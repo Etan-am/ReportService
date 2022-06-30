@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="itext7" Version="7.2.2" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ReportService.DataAccess\ReportService.DataAccess.csproj" />
+      <ProjectReference Include="..\ReportService.Domain\ReportService.Domain.csproj" />
+      <ProjectReference Include="..\ReportService.Integration.Buh\ReportService.Integration.Buh.csproj" />
+      <ProjectReference Include="..\ReportService.Integration.File\ReportService.Integration.File.csproj" />
+      <ProjectReference Include="..\ReportService.Integration.Salary\ReportService.Integration.Salary.csproj" />
+    </ItemGroup>
+
+</Project>
